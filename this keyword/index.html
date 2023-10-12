@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this keyword</title>
+</head>
+<body>
+    <h1>'this' keyword</h1>
+    <ul>
+        <li>
+            in <b>global scope : </b> <strong>'this'</strong> keyword points to global <b>window</b> object.
+<pre>
+    console.log(this)
+</pre>
+        </li>
+        <li>
+            in <b>regular function call</b> <strong>'this'</strong> keyword is global <b>window</b> object. and in strict mode<b>'use strict'</b>
+            <strong>this</strong> keyword is <b>undefined</b>
+        </li>
+        <li>
+            in <b>method call</b> means function attach to obj.  <strong>'this'</strong> keyword points to object on which that method is called.
+        </li>
+        <li>
+            <b>arrow function</b> dosen't have it's own <strong>'this'</strong> keyword.. it uses <b>this</b> keyword of it's parent scope.
+        </li>
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>
